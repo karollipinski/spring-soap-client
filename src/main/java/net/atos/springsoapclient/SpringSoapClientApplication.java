@@ -20,7 +20,7 @@ public class SpringSoapClientApplication {
         request.setName("Peperoni");
 
         PizzaDetailsResponse response = (PizzaDetailsResponse) soapConnector.callWebService("http://localhost:8080/service/pizza-details", request);
-        log.info("Response from SOAP \n",);
+        log.info("Response from SOAP \n");
         log.info("Name : {}", response.getPizza().getName());
         log.info("Ingredients : {}", response.getPizza().getIngredients());
         log.info("Sauce : {}", response.getPizza().getSauce());
